@@ -1,0 +1,24 @@
+{
+  "extends": ["airbnb-base", "plugin:prettier/recommended"],
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "prefer-promise-reject-errors": [
+      "error", {"allowEmptyReject": true}
+    ]
+  },
+  "settings": {
+    "import/resolve": {
+      "moduleDirectory": ["node_modules"]
+    }
+  },
+  "plugins": ["import"],
+  "globals": {
+    "Parse": true,
+    "APP_ROOT": true,
+    "describe": true,
+    "it": true,
+    "after": true
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "mynode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "pm2": "pm2 start --name 'app' --instances 4 index.js",
+    "pm2-reload": "pm2 reload all",
+    "pm2-log": "pm2 log",
+    "inspect": "nodemon --inspect index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-console": "^1.0.1",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "session-file-store": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "jsdoc": "^3.5.5",
+    "nodemon": "^1.18.11",
+    "pm2": "^3.5.0",
+    "prettier": "^1.16.4"
+  }
+}
