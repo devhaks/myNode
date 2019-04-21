@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "pm2": "pm2 start --name 'app' --instances 4 index.js",
+    "pm2": "pm2 start --name 'app' --instances 3 index.js",
     "pm2-reload": "pm2 reload all",
     "pm2-log": "pm2 log",
     "inspect": "nodemon --inspect index.js"
